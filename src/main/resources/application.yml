@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+# Cassandra configuration start ...
+spring:
+  cassandra:
+    contact-points: 127.0.0.1:9042
+    local-datacenter: datacenter1
+    keyspace-name: url_shortener
+# Cassandra configuration end ...
+
+# Redis configuration start ...
+  redis:
+    host: 127.0.0.1
+    port: 6379
+# Redis configuration end ...
